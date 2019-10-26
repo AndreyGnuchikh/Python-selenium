@@ -1,0 +1,12 @@
+For saving my requirement new tap in terminal this text:
+pip freeze > requirements.txt
+
+Создадим виртуальное окружение:
+Open directory where is want save file
+than
+python -m venv pythonvirtual                 pythonvirtual is dir
+than
+selenium_env\Scripts\activate.bat
+than find requirements.txt
+and add command:
+pip install -r requirements.txt
