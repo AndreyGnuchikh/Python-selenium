@@ -4,9 +4,26 @@ pip freeze > requirements.txt
 Создадим виртуальное окружение:
 Open directory where is want save file
 than
-python -m venv pythonvirtual                 pythonvirtual is dir
+python -m venv pythonvirtual                pythonvirtual is dir
 than
 selenium_env\Scripts\activate.bat
 than find requirements.txt
 and add command:
 pip install -r requirements.txt
+
+
+Чтобы все были счастливы нужно вот так:
+Сохранение пакетов
+Шаги:
+1. Запускаем окружение, список пакетов которого нужно сохранить (/.../evironments/<EXAMPLE_ENV>/Scripts/activate.bat)
+2. В командной строке переходим в каталог, в котором хотим хранить файл (requirements.txt)
+3. Сохраняем список пакетов данного окружения командой:
+pip freeze > requirements.txt
+Восстановление пакетов для нового окружения
+Шаги
+1. Запускаем новое окружение, для которого нужно восстановить список пакетов
+2. В командной строке переходим в каталог, в котором сохранили файл (requirements.txt)
+3. Восстанавливаем список пакетов для нового окружения командой:
+pip install -r requirements.txt
+в результате должно сгенерироваться сообщение об успешности проведенного мероприятия, где указаны ваши версии пакетов и их версий, естественно.
+Successfully installed atomicwrites-1.3.0 attrs-19.3.0 colorama-0.4.1 more-itertools-7.2.0 packaging-19.2 pluggy-0.13.1 py-1.8.0 pyparsing-2.4.5 pytest-5.1.1 selenium-3.14.0 six-1.13.0 urllib3-1.25.7 wcwidth-0.1.7
